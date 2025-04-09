@@ -1,3 +1,10 @@
+# Project
+
+This Project you can test on this [netlify url](https://bucolic-basbousa-acb60a.netlify.app/)
+-- better to check on actual phone
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
