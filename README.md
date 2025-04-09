@@ -7,6 +7,89 @@ This Project you can test on this [netlify url](https://bucolic-basbousa-acb60a.
 
 ![alt text](image-4.png)
 
+
+# Project Architecture
+
+A mobile browser version of a Content Listing page built with ReactJS, Redux toolkit, featuring lazy loading, client-side search, and responsive design as per the provided specifications.
+
+## Features
+
+- ✅ Pixel-perfect implementation of the provided design
+- ✅ Responsive mobile portrait view with three-column grid
+- ✅ Vertical scrolling with hidden scrollbars
+- ✅ Lazy loading of content as user scrolls
+- ✅ Client-side search functionality
+- ✅ Elegant handling of edge cases
+- ✅ No pausing or blocking loaders during scroll
+
+## Tech Stack
+
+- React.js
+- Redux Toolkit for state management
+- Thunk for Data fetching and management
+- CSS3
+- Intersection Observer API for seamless lazy loading
+- Netlify for deployment
+
+## Project Structure
+
+```
+src/
+├── components/
+│ ├── Header.jsx # App header with back and search buttons
+│ ├── SearchBar.jsx # Search input component
+│ ├── ContentGrid.jsx # Main grid layout for content items
+│ ├── ContentItem.jsx # Individual content item with poster and title
+│ └── Skeleton.jsx # Loading placeholder for smoother UX
+│ └── FallbackContent.jsx # UI for invalid search
+|  
+├── hooks/
+│ ├── useIntersectionObserver.js # Custom hook for lazy loading
+├── Redux/
+│ ├── Slices # For Managing state
+│ ├── Thunks # Data fetching and management
+├── App.js # Main application component
+├── index.js # Entry point
+└── index.css # Global styles
+```
+
+## Implementation Details
+
+### Design Requirements
+
+- Font: Titillium Web from Google Fonts
+- Thumbnail aspect ratio: 2:3
+- Background color: #171717
+- Text color: #FFFFFF
+- Three-column grid with even paddings
+- Hidden scrollbars
+- Mobile portrait view only
+
+### Functional Features
+
+1. **Vertical Scrolling**:
+- Grid allows vertical scrolling but restricts horizontal scrolling
+- Uses CSS to hide scrollbars while maintaining functionality
+
+2. **Lazy Loading**:
+- Implements Intersection Observer API for efficient detection of scroll position
+- Loads next page of data when user approaches end of current content
+- No visible loading indicators during scroll for seamless experience
+- First page loaded on initial app load
+
+3. **Client-Side Search**:
+- Filters content based on title from already loaded data
+- Updates results in real-time as user types
+- Preserves UI state without page refresh
+
+4. **Edge Case Handling**:
+- Gracefully handles missing images in page 3
+- Provides fallback UI for content items with errors
+- Maintains consistent UI despite data irregularities
+
+
+
+
 Intial View
 
 ![alt text](image-6.png) \
