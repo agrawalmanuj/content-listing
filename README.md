@@ -7,6 +7,9 @@ This Project you can test on this [netlify url](https://bucolic-basbousa-acb60a.
 
 ![alt text](image-4.png)
 
+Intial View
+
+![alt text](image-6.png)
 
 
 # Getting Started with Create React App
