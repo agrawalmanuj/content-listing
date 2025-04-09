@@ -31,7 +31,6 @@ const contentSlice = createSlice({
                     const {
                         'page-num-requested': pageNumRequested,
                         'page-size-requested': pageSizeRequested,
-                        'page-size-returned': pageSizeReturned,
                         'total-content-items': totalContentItems,
                     } = action.payload;
                     state.hasMore = pageNumRequested * pageSizeRequested < totalContentItems;

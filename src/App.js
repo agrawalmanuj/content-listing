@@ -12,7 +12,7 @@ function App() {
   // Initial data load
   useEffect(() => {
     dispatch(fetchContentPage(1));
-  }, []);
+  }, [dispatch]);
 
   // Filter items based on search query
   const filteredItems = searchQuery.trim() === ''
