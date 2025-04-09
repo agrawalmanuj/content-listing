@@ -13,7 +13,8 @@ const ContentGrid = ({ items, loading, hasMore, loadMore, searchActive, searchQu
                 {items.map((item, index) => (
                     <ContentItem
                         key={`${item.name}-${index}-${item['poster-image']}`}
-                        item={item} />
+                        item={item}
+                    />
                 ))}
                 {/* Skeleton placeholders for loading */}
                 {loading && (

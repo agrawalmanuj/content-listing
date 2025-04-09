@@ -14,7 +14,7 @@ function App() {
     dispatch(fetchContentPage(1));
   }, []);
 
-  // // Filter items based on search query
+  // Filter items based on search query
   const filteredItems = searchQuery.trim() === ''
     ? items
     : items.filter(item =>
@@ -26,7 +26,6 @@ function App() {
       dispatch(fetchContentPage(currentPage));
     }
   };
-
 
   return (
     <div className="app-container">
