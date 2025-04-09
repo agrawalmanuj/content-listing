@@ -11,6 +11,8 @@ Intial View
 
 ![alt text](image-6.png)
 
+Scrolled View
+![alt text](image-1.png)
 
 # Getting Started with Create React App
 
