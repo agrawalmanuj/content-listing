@@ -6,7 +6,6 @@
 .poster-container {
     aspect-ratio: 2/3;
     overflow: hidden;
-    border-radius: 4px;
     background-color: #2a2a2a;
     /* Fallback background */
     margin-bottom: 8px;
