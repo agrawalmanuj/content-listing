@@ -1,6 +1,6 @@
 # Project
 
-This Project you can test on this [netlify url](https://bucolic-basbousa-acb60a.netlify.app/) \
+This Project you can test on this [netlify url](https://bucolic-basbousa-acb60a.netlify.app/)
 
 
 # If check using Chrome developer tools, make sure to select fit to window as in below screenshot
