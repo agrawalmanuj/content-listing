@@ -1,23 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import Header from './components/Header';
+import ContentGrid from './components/ContentGrid';
+import { fetchContentPage } from './redux/thunks/contentThunks';
 
 function App() {
+  const dispatch = useDispatch();
+  const { title, items, loading, hasMore, currentPage } = useSelector(state => state.content);
+  const { searchActive, searchQuery } = useSelector(state => state.search);
+
+  // Initial data load
+  useEffect(() => {
+    dispatch(fetchContentPage(1));
+  }, []);
+
+  // // Filter items based on search query
+  const filteredItems = searchQuery.trim() === ''
+    ? items
+    : items.filter(item =>
+      item.name.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+
+  const loadMore = () => {
+    if (!loading && hasMore) {
+      dispatch(fetchContentPage(currentPage));
+    }
+  };
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <Header title={title} />
+      <ContentGrid
+        searchActive={searchActive}
+        items={filteredItems}
+        loading={loading}
+        hasMore={hasMore}
+        loadMore={loadMore}
+        searchQuery={searchQuery}
+      />
     </div>
   );
 }

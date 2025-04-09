@@ -1,0 +1,16 @@
+.fallback-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 100px;
+}
+
+.fallback-container-suggestions {
+    margin: 8px 0px;
+}
+
+.fallback-container-suggestions-list {
+    margin-left: 32px;
+}

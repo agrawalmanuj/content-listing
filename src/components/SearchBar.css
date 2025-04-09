@@ -1,0 +1,35 @@
+.search-bar {
+    background-color: rgba(23, 23, 23, 0.9);
+    width: 100%;
+    margin-left: 20%;
+    margin-right: -16px;
+
+}
+
+.search-input-container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+.search-input-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.search-input {
+    background: transparent;
+    border: none;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    flex-grow: 1;
+    outline: none;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}

@@ -1,0 +1,18 @@
+.content-grid-container {
+    padding: 16px;
+    padding-top: 66px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    row-gap: 32px;
+    width: 100%;
+}
+
+.loading-trigger {
+    height: 20px;
+    width: 100%;
+    opacity: 0;
+}
