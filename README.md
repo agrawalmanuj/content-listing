@@ -1,7 +1,11 @@
 # Project
 
-This Project you can test on this [netlify url](https://bucolic-basbousa-acb60a.netlify.app/)
+This Project you can test on this [netlify url](https://bucolic-basbousa-acb60a.netlify.app/) \
 -- better to check on actual phone
+
+# If check using Chrome developer tools, make sure to select fit to window as in below screenshot
+
+![alt text](image-4.png)
 
 
 
