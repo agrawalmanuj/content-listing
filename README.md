@@ -7,12 +7,18 @@ This Project you can test on this [netlify url](https://bucolic-basbousa-acb60a.
 
 ![alt text](image-4.png)
 
-Intial View \
+Intial View
 
 ![alt text](image-6.png) \
 
-Scrolled View \
-![alt text](image-1.png)
+Scrolled View 
+![alt text](image-1.png) \
+
+# handling Page 3 items edge cases
+
+see last item (image error) and item above on the last item (large text content)
+
+![alt text](image-3.png) \
 
 # Getting Started with Create React App
 
