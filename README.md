@@ -20,6 +20,9 @@ see last item (image error) and item above on the last item (large text content)
 
 ![alt text](image-3.png) \
 
+If no item matches the query, then show fallback UI
+![alt text](image-5.png) 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
