@@ -7,11 +7,11 @@ This Project you can test on this [netlify url](https://bucolic-basbousa-acb60a.
 
 ![alt text](image-4.png)
 
-Intial View
+Intial View \
 
-![alt text](image-6.png)
+![alt text](image-6.png) \
 
-Scrolled View
+Scrolled View \
 ![alt text](image-1.png)
 
 # Getting Started with Create React App
