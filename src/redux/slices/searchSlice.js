@@ -9,6 +9,10 @@ const searchSlice = createSlice({
     name: 'search',
     initialState,
     reducers: {
+        resetSearchState: (state) => {
+            state.searchActive = false;
+            state.searchQuery = '';
+        },
         toggleSearch: (state) => {
             state.searchActive = !state.searchActive;
         },
@@ -18,5 +22,5 @@ const searchSlice = createSlice({
     },
 });
 
-export const { toggleSearch, updateSearchQuery } = searchSlice.actions;
+export const { toggleSearch, updateSearchQuery, resetSearchState } = searchSlice.actions;
 export default searchSlice.reducer;

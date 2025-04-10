@@ -1,9 +1,11 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleSearch } from '../redux/slices/searchSlice';
+import { resetSearchState, toggleSearch } from '../redux/slices/searchSlice';
 import './Header.css';
 import SearchBar from './SearchBar';
 import { BASE_URL } from '../const';
+import { resetContentState } from '../redux/slices/contentSlice';
+import { fetchContentPage } from '../redux/thunks/contentThunks';
 
 const Header = ({ title }) => {
     const dispatch = useDispatch();
@@ -13,10 +15,16 @@ const Header = ({ title }) => {
         dispatch(toggleSearch());
     };
 
+    const handleBack = () => {
+        dispatch(resetSearchState());
+        dispatch(resetContentState());
+        dispatch(fetchContentPage(1));
+    }
+
     return (
         <header className="header">
             <div className="header-container">
-                <button className="back-button">
+                <button className="back-button" onClick={handleBack}>
                     <img
                         src={`${BASE_URL}/images/Back.png`}
                         alt="Back"

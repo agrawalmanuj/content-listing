@@ -13,7 +13,16 @@ const initialState = {
 const contentSlice = createSlice({
     name: 'content',
     initialState,
-    reducers: {},
+    reducers: {
+        resetContentState: (state) => {
+            state.items = [];
+            state.currentPage = 1;
+            state.loading = true;
+            state.hasMore = true;
+            state.error = null;
+            state.title = '';
+        }
+    },
     extraReducers: (builder) => {
         builder
             .addCase(fetchContentPage.pending, (state) => {
@@ -50,5 +59,5 @@ const contentSlice = createSlice({
             });
     },
 });
-
+export const { resetContentState } = contentSlice.actions;
 export default contentSlice.reducer;
